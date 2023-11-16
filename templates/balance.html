@@ -14,15 +14,6 @@
                 {% endfor %}
             </p>
             <p>
-                {{ form.money.label }}<br>
-                {{ form.money(class="form-control")}}<br>
-                {% for error in form.money.errors %}
-                    <p class="alert alert-danger" role="alert">
-                        {{ error }}
-                    </p>
-                {% endfor %}
-            </p>
-            <p>
                 {{ form.password.label }}<br>
                 {{ form.password(class="form-control", type="password") }}<br>
                 {% for error in form.password.errors %}
@@ -36,6 +27,6 @@
         </form>
         <a class="btn btn-primary" style="position: relative; left: 40px" href="/" role="button">Return to the main
             page</a>
-    <h1 style="color: darkgreen">{{ suc }}</h1>
+    <h1 style="color: brown">{{ bal }}</h1>
     </main>
 {% endblock %}
