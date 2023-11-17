@@ -28,8 +28,8 @@ class MoneyDepositForm(FlaskForm):
 class MoneyWithdrawForm(FlaskForm):
     account_number = StringField('Your account number', validators=[DataRequired()])
     password = StringField('PIN', validators=[DataRequired()])
-    money = StringField('How much money you want to deposit', validators=[DataRequired()])
-    submit = SubmitField('Deposit money')
+    money = StringField('How much money you want to withdraw', validators=[DataRequired()])
+    submit = SubmitField('Withdraw money')
 
 
 class BalanceForm(FlaskForm):
